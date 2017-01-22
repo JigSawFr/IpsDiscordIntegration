@@ -1,0 +1,22 @@
+{
+    "member": {
+        "type": "C",
+        "class": "\\IPS\\Member"
+    },
+    "hookCssJs": {
+        "type": "C",
+        "class": "\\IPS\\Dispatcher\\Standard"
+    },
+    "topic": {
+        "type": "C",
+        "class": "\\IPS\\forums\\Topic"
+    },
+    "post": {
+        "type": "C",
+        "class": "\\IPS\\forums\\Topic\\Post"
+    },
+    "forum": {
+        "type": "C",
+        "class": "\\IPS\\forums\\Forum"
+    }
+}

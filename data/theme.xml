@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="Default" author_name="Invision Power Services, Inc" author_url="http://www.invisionpower.com">
+ <template template_group="login" template_name="discord" template_data="$url" template_location="global" template_app="discord"><![CDATA[<a href='{$url|raw}' class='ipsButton ipsButton_verySmall ipsButton_fullWidth ipsSocial discordSocial'>
+    <span class='ipsSocial_icon'><i class='fa fa-lock'></i></span>
+    <span class='ipsSocial_text'>{lang="discord_sign_in"}</span>
+</a>]]></template>
+ <css css_location="global" css_app="discord" css_attributes="" css_path="login" css_name="discord.css">.discordSocial {
+    background: #2C2F33;
+}</css>
+</theme>

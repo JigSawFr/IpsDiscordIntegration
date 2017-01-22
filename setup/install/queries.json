@@ -1,0 +1,60 @@
+{
+    "1": {
+        "method": "addColumn",
+        "params": [
+            "core_members",
+            {
+                "name": "discord_id",
+                "type": "VARCHAR",
+                "length": 64,
+                "default": ""
+            }
+        ]
+    },
+    "2": {
+        "method": "addColumn",
+        "params": [
+            "core_members",
+            {
+                "name": "discord_token",
+                "type": "TEXT"
+            }
+        ]
+    },
+    "3": {
+        "method": "addColumn",
+        "params": [
+            "core_groups",
+            {
+                "name": "discord_role",
+                "type": "VARCHAR",
+                "length": 64,
+                "default": ""
+            }
+        ]
+    },
+    "4": {
+        "method": "addColumn",
+        "params": [
+            "forums_forums",
+            {
+                "name": "discord_channel_approved",
+                "type": "VARCHAR",
+                "length": 64,
+                "default": "0"
+            }
+        ]
+    },
+    "5": {
+        "method": "addColumn",
+        "params": [
+            "forums_forums",
+            {
+                "name": "discord_channel_unapproved",
+                "type": "VARCHAR",
+                "length": 64,
+                "default": "0"
+            }
+        ]
+    }
+}

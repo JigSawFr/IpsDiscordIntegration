@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+ <app key="discord" version="10003">
+  <word key="__app_discord" js="0">Discord Integration</word>
+  <word key="menu__discord_settings" js="0">Discord</word>
+  <word key="menu__discord_settings_settings" js="0">Settings</word>
+  <word key="module__discord_register" js="0">Register Module</word>
+  <word key="discord_setting_title" js="0">Discord Settings</word>
+  <word key="discord_connection_settings" js="0">Authentication</word>
+  <word key="discord_redirect_uris" js="0"><![CDATA[Add the following redirect URIs to your discord application:<br/>%s<br/>%s]]></word>
+  <word key="discord_client_id" js="0">Discord Client ID</word>
+  <word key="discord_client_id_desc" js="0"><![CDATA[You can create a discord application <a target='_blank' href='https://discordapp.com/developers/applications/me'>here</a>]]></word>
+  <word key="discord_client_secret" js="0">Discord Client Secret</word>
+  <word key="discord_client_secret_desc" js="0"><![CDATA[You can create a discord application <a target='_blank' href='https://discordapp.com/developers/applications/me'>here</a>]]></word>
+  <word key="discord_bot_token" js="0">Discord Bot Token</word>
+  <word key="discord_bot_token_desc" js="0"><![CDATA[You can create a discord application <a target='_blank' href='https://discordapp.com/developers/applications/me'>here</a>]]></word>
+  <word key="discord_guild_id" js="0">Discord Guild ID</word>
+  <word key="discord_guild_id_desc" js="0">This will be automatically assigned when choosing the server after saving</word>
+  <word key="discord_map_settings" js="0">Basic</word>
+  <word key="discord_remove_unmapped" js="0">Remove unmapped roles</word>
+  <word key="discord_remove_unmapped_desc" js="0">Should roles that are not mapped to IPS groups be removed from discord members?</word>
+  <word key="discord_sync_bans" js="0">Sync bans</word>
+  <word key="discord_sync_bans_desc" js="0">Should a member get banned on discord if said member got banned on the forum?</word>
+  <word key="discord_handshake" js="0">Handshake</word>
+  <word key="discord_post_format" js="0">Post Formatting</word>
+  <word key="discord_new_topic" js="0">New Topic</word>
+  <word key="discord_new_topic_desc" js="0"><![CDATA[This will be posted to a channel when there is a new topic.<br/>%poster = Poster name.<br/>%topicTitle = The title of the topic that is being posted.<br/>%link = Link to the topic.]]></word>
+  <word key="discord_new_post" js="0">New Post</word>
+  <word key="discord_new_post_desc" js="0"><![CDATA[This will be posted to a channel when there is a new post.<br/>%poster = Poster name.<br/>%topicTitle = The title of the topic that is being posted in.<br/>%link = Link to the post.]]></word>
+  <word key="discord_sign_in" js="0">Sign in with Discord</word>
+  <word key="profilesync__Discord" js="0">Discord</word>
+  <word key="login_handler_Discord" js="0">Discord</word>
+  <word key="group__discord_roles" js="0">Discord</word>
+  <word key="discord_role" js="0">Discord Role</word>
+  <word key="discord_channels" js="0">Discord Channels</word>
+  <word key="discord_channel_approved" js="0">Channel to post in if the topic/post is approved.</word>
+  <word key="discord_channel_unapproved" js="0">Channel to post in if the topic/post is unapproved.</word>
+  <word key="discord_access_denied" js="0">You denied access</word>
+ </app>
+</language>

@@ -1,0 +1,34 @@
+[
+    {
+        "key": "discord_bot_token",
+        "default": ""
+    },
+    {
+        "key": "discord_client_id",
+        "default": ""
+    },
+    {
+        "key": "discord_client_secret",
+        "default": ""
+    },
+    {
+        "key": "discord_guild_id",
+        "default": ""
+    },
+    {
+        "key": "discord_new_post",
+        "default": "%poster has just posted a new post to the topic: \"%topicTitle\". Read more: %link"
+    },
+    {
+        "key": "discord_new_topic",
+        "default": "%poster has just posted a new topic called: \"%topicTitle\". Read more: %link"
+    },
+    {
+        "key": "discord_remove_unmapped",
+        "default": "0"
+    },
+    {
+        "key": "discord_sync_bans",
+        "default": "0"
+    }
+]

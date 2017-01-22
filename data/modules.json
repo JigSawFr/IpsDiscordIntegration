@@ -1,0 +1,14 @@
+{
+    "admin": {
+        "settings": {
+            "default_controller": "",
+            "protected": 0
+        }
+    },
+    "front": {
+        "register": {
+            "default_controller": "",
+            "protected": false
+        }
+    }
+}
