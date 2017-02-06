@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language>
- <app key="discord" version="10003">
+ <app key="discord" version="10004">
   <word key="__app_discord" js="0">Discord Integration</word>
   <word key="menu__discord_settings" js="0">Discord</word>
   <word key="menu__discord_settings_settings" js="0">Settings</word>
@@ -22,7 +22,15 @@
   <word key="discord_sync_bans" js="0">Sync bans</word>
   <word key="discord_sync_bans_desc" js="0">Should a member get banned on discord if said member got banned on the forum?</word>
   <word key="discord_handshake" js="0">Handshake</word>
-  <word key="discord_post_format" js="0">Post Formatting</word>
+  <word key="discord_post_settings" js="0">Post Settings</word>
+  <word key="discord_post_topics" js="0">Notify about (all) new topics?</word>
+  <word key="discord_post_topics_desc" js="0">Should notifications be sent to discord channels about new topics (does not matter if approved or unapproved)?</word>
+  <word key="discord_post_unapproved_topics" js="0">Notify about new unapproved topics?</word>
+  <word key="discord_post_unapproved_topics_desc" js="0">Should notifications be sent to discord channels about new (unapproved) topics?</word>
+  <word key="discord_post_posts" js="0">Notify about (all) new posts?</word>
+  <word key="discord_post_posts_desc" js="0">Should notifications be sent to discord channels about new posts (does not matter if approved or unapproved)?</word>
+  <word key="discord_post_unapproved_posts" js="0">Notify about new unapproved posts?</word>
+  <word key="discord_post_unapproved_posts_desc" js="0">Should notifications be sent to discord channels about new (unapproved) posts?</word>
   <word key="discord_new_topic" js="0">New Topic</word>
   <word key="discord_new_topic_desc" js="0"><![CDATA[This will be posted to a channel when there is a new topic.<br/>%poster = Poster name.<br/>%topicTitle = The title of the topic that is being posted.<br/>%link = Link to the topic.]]></word>
   <word key="discord_new_post" js="0">New Post</word>

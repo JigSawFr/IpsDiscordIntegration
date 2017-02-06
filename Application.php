@@ -47,6 +47,16 @@ class _Application extends \IPS\Application
             \IPS\ROOT_PATH . '/system/Login/Discord.php'
         );
 
+        /**
+         * Fix: "Permission too open" error.
+         * Chmod files that need to be directly called to 644.
+         * Because on some server configurations those are set to 666 by default and thus error out.
+         */
+        \chmod(
+            \IPS\ROOT_PATH . '/applications/discord/interface/oauth/auth.php',
+            644
+        );
+
         if ( !$profileSync || !$systemLogin )
         {
             throw new \OutOfRangeException( 'Copying required file failed.' );

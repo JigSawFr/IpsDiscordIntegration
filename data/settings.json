@@ -24,6 +24,22 @@
         "default": "%poster has just posted a new topic called: \"%topicTitle\". Read more: %link"
     },
     {
+        "key": "discord_post_posts",
+        "default": "0"
+    },
+    {
+        "key": "discord_post_topics",
+        "default": "1"
+    },
+    {
+        "key": "discord_post_unapproved_posts",
+        "default": "1"
+    },
+    {
+        "key": "discord_post_unapproved_topics",
+        "default": "0"
+    },
+    {
         "key": "discord_remove_unmapped",
         "default": "0"
     },

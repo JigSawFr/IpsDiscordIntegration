@@ -27,7 +27,7 @@ class discord_hook_post extends _HOOK_CLASS_
         /** @var \IPS\forums\Topic\Post $comment */
         $comment = call_user_func_array( 'parent::create', func_get_args() );
 
-        if ( !$first && $item instanceof \IPS\forums\Topic )
+        if ( !$first && $item instanceof \IPS\forums\Topic && ( \IPS\Settings::i()->discord_post_posts || ( $comment->hidden() && \IPS\Settings::i()->discord_post_unapproved_posts ) ) )
         {
             $channel = new \IPS\discord\Api\Channel;
             $channel->post( $item, $comment, $member );
@@ -47,7 +47,7 @@ class discord_hook_post extends _HOOK_CLASS_
     {
         $return = call_user_func_array( 'parent::onUnhide', func_get_args() );
 
-        if ( $approving )
+        if ( $approving && \IPS\Settings::i()->discord_post_posts )
         {
             $channel = new \IPS\discord\Api\Channel;
             $channel->post( $this->item(), $this );
