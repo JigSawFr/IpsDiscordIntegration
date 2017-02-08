@@ -19,6 +19,7 @@ class _Guild extends \IPS\discord\Api\AbstractResponse
     {
         /** @noinspection PhpUndefinedFieldInspection */
         $this->api->setUrl( \IPS\discord\Api::API_URL )
+            ->setAuthType( \IPS\discord\Api::AUTH_TYPE_BOT )
             ->setUri( 'guilds/{guild.id}/' . $uri )
             ->setMethod( 'get' )
             ->setParams([

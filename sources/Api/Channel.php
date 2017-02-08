@@ -24,6 +24,7 @@ class _Channel extends \IPS\discord\Api\AbstractResponse
         if ( $info !== NULL )
         {
             $this->api->setUrl( \IPS\discord\Api::API_URL )
+                ->setAuthType( \IPS\discord\Api::AUTH_TYPE_BOT )
                 ->setUri( 'channels/' . $info['channelId'] . '/messages' )
                 ->setMethod( 'post' )
                 ->setParams(json_encode([

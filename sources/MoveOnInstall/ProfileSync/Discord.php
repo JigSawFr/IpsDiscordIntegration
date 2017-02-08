@@ -57,6 +57,10 @@ class _Discord extends ProfileSyncAbstract
                     $this->authToken = $response['access_token'];
                     $this->user = $this->get();
                 }
+
+                /* Sync roles */
+                $guildMember = new \IPS\discord\Api\GuildMember;
+                $guildMember->updateRoles( $this->member );
             }
             catch ( \IPS\Http\Request\Exception $e )
             {

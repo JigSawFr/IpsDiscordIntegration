@@ -105,6 +105,10 @@ class _Discord extends LoginAbstract
                 )
             );
 
+            /* Sync user */
+            $guildMember = new \IPS\discord\Api\GuildMember;
+            $guildMember->updateRoles( $member );
+
             /* Return */
             return $member;
         }
@@ -129,6 +133,10 @@ class _Discord extends LoginAbstract
         $member->discord_id = $userData['id'];
         $member->discord_token = $details;
         $member->save();
+
+        /* Sync member */
+        $guildMember = new \IPS\discord\Api\GuildMember;
+        $guildMember->updateRoles( $member );
     }
 
     /**

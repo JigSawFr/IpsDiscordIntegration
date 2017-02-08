@@ -39,6 +39,7 @@ class _GuildMember extends \IPS\discord\Api\AbstractResponse
 
         /** @noinspection PhpUndefinedFieldInspection */
         $this->api->setUrl( \IPS\discord\Api::API_URL )
+            ->setAuthType( \IPS\discord\Api::AUTH_TYPE_BOT )
             ->setMember( $member )
             ->setUri( 'guilds/{guild.id}/members/{user.id}' )
             ->setParams(json_encode([
@@ -61,6 +62,7 @@ class _GuildMember extends \IPS\discord\Api\AbstractResponse
         $method = $unban ? 'delete' : 'put';
 
         $this->api->setUrl( \IPS\discord\Api::API_URL )
+            ->setAuthType( \IPS\discord\Api::AUTH_TYPE_BOT )
             ->setMember( $member )
             ->setUri( 'guilds/{guild.id}/bans/{user.id}' )
             ->setParams([])
@@ -78,6 +80,7 @@ class _GuildMember extends \IPS\discord\Api\AbstractResponse
     public function remove( \IPS\Member $member )
     {
         $this->api->setUrl( \IPS\discord\Api::API_URL )
+            ->setAuthType( \IPS\discord\Api::AUTH_TYPE_BOT )
             ->setMember( $member )
             ->setUri( 'guilds/{guild.id}/members/{user.id}' )
             ->setParams( [] )
@@ -144,7 +147,7 @@ class _GuildMember extends \IPS\discord\Api\AbstractResponse
         }
 
         /** @noinspection PhpUndefinedFieldInspection */
-        return array_unique( $member->discord_roles );
+        return array_values( array_filter( array_unique( $member->discord_roles ) ) );
     }
 
     /**

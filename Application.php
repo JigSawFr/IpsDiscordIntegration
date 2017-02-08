@@ -12,6 +12,7 @@ namespace IPS\discord;
 
 /**
  * Discord Integration Application Class
+ * @TODO: name syncing
  * @TODO: Feature: Notifications for PMs.
  * @TODO: Feature: Notifications for watched topics.
  * @TODO: (User)Setting: Send notifications on Discord?

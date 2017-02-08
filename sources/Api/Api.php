@@ -225,7 +225,10 @@ class _Api extends \IPS\Patterns\Singleton
             throw new \OutOfRangeException( 'parameter_is_missing' );
         }
 
-        if ( $this->token === NULL )
+        if (
+            $this->token === NULL ||
+            ( $this->token !== \IPS\Settings::i()->discord_bot_token && $this->authType === self::AUTH_TYPE_BOT )
+        )
         {
             /** @noinspection PhpUndefinedFieldInspection */
             $this->token = \IPS\Settings::i()->discord_bot_token;
