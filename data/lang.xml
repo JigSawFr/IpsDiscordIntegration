@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language>
- <app key="discord" version="10005">
+ <app key="discord" version="10006">
   <word key="__app_discord" js="0">Discord Integration</word>
   <word key="menu__discord_settings" js="0">Discord</word>
   <word key="menu__discord_settings_settings" js="0">Settings</word>

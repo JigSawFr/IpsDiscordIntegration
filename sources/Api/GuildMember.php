@@ -143,11 +143,15 @@ class _GuildMember extends \IPS\discord\Api\AbstractResponse
             $notMappedRoles = $this->role()->getNotMappedRoles( $currentRoles );
 
             /** @noinspection PhpUndefinedFieldInspection */
-            return array_merge( $notMappedRoles, $member->discord_roles );
+            $rolesToReturn = array_merge( $notMappedRoles, $member->discord_roles );
+        }
+        else
+        {
+            /** @noinspection PhpUndefinedFieldInspection */
+            $rolesToReturn = $member->discord_roles;
         }
 
-        /** @noinspection PhpUndefinedFieldInspection */
-        return array_values( array_filter( array_unique( $member->discord_roles ) ) );
+        return array_values( array_filter( array_unique( $rolesToReturn ) ) );
     }
 
     /**
