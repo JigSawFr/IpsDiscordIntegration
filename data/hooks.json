@@ -18,5 +18,9 @@
     "forum": {
         "type": "C",
         "class": "\\IPS\\forums\\Forum"
+    },
+    "nodecontroller": {
+        "type": "C",
+        "class": "\\IPS\\Node\\Controller"
     }
 }
