@@ -59,10 +59,13 @@ abstract class _AbstractResponse
             return $response->decodeJson();
         }
 
-        $this->throwException( $statusCode );
+        try {
+            $this->throwException( $statusCode );
+        } catch ( Exception\NotFoundException $e ) {
+            /* Ignore not found exceptions as members can leave discord any time etc. */
+        }
 
-        /* This is just here to satisfy my IDE */
-        return NULL;
+        return $response->decodeJson();
     }
 
     /**
